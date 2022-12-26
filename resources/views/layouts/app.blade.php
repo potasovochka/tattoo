@@ -18,5 +18,7 @@
         @yield('content')
     </div>
 </div>
+<!--Подключаем футер-->
+@include('inc.footer')
 </body>
 </html>

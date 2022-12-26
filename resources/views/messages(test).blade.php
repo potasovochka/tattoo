@@ -15,14 +15,15 @@
                     <div class="form-group">
                         <label for="name">Оставить отзыв:</label>
                         <input type="text" name="name" placeholder="Введите имя" id="name" class="form-control mt-2">
-                        <input type="text" name="email" placeholder="Введите email" id="email" class="form-control mt-2">
-                        <textarea type="text" name="msg" placeholder="Введите сообщение" id="msg" class="form-control mt-2"></textarea>
+                        <input type="text" name="email" placeholder="Введите email" id="email"
+                               class="form-control mt-2">
+                        <textarea type="text" name="msg" placeholder="Введите сообщение" id="msg"
+                                  class="form-control mt-2"></textarea>
                     </div>
                     <button type="submit" class="btn btn-success mt-2">Отправить</button>
                 </form>
             </div>
             <div class="col-5">
-                <!--Подключаем вывод отзывов из БД через функцию allData описанной в конструкторе ReviewsController-->
                 <h3>Отзывы:</h3>
                 @foreach($data as $element)
                     <div class="alert alert-info">
@@ -35,6 +36,4 @@
                     </div>
                 @endforeach
             </div>
-        </div>
-    </div>
 @endsection

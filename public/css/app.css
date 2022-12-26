@@ -1,17 +1,35 @@
+/* Цвет навигационной панели шапки сайта */
+header.d-flex.flex-wrap.justify-content-center.py-3.mb-4.border-bottom{
+    background-color: black;
+}
+/* Цвет текста имени бренда в шапке сайта */
+span.fs-4{
+    color: white;
+}
+/* Цвет навигационных кнопок в шапке сайта */
 a.nav-link {
-    color: black;
+    color: white;
 }
-a.nav-link.active{
-    --bs-nav-pills-link-active-bg: black;
-}
+/* Цвет навигационных кнопок в шапке сайта при наведении на них */
 .nav{
     --bs-link-hover-color: #787878;
 }
+/* Изображение на главной странице сайта */
 img.rounded.mx-auto.d-block{
     width: 80%;
     height: 480px;
 }
+/* Изображения в разделе "Портфолио" */
 img.img-thumbnail{
     width: 100%;
     height: 300px;
+}
+/* Изображения в разделе "Контакты" */
+img.contact-img{
+    height: 120px;
+    text-align: right;
+}
+/* Отображение изображений в разделе "Контакты" по центру */
+div.col-4{
+    text-align: center;
 }

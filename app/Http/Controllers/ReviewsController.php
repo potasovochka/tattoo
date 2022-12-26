@@ -25,7 +25,8 @@ class ReviewsController extends Controller
         // Добавляем все введённые значения из формы отзывов в БД
         $reviews->save();
 
-        // Переадресовываем пользоваетя после отправки отзыва на страницу отзывов ->with вызывая сессию 'success' с уведомлением об отправке отзыва
+        /* Переадресовываем пользоваетя после отправки отзыва на страницу отзывов ->with вызывая сессию 'success'
+           с уведомлением об отправке отзыва */
         return redirect()->route('reviews')->with('success', 'Отзыв отправлен');
     }
 
@@ -33,6 +34,6 @@ class ReviewsController extends Controller
     public function allData(){
         // Создаём класс на основе нашей модели Reviews работающей с БД
         $reviews = new Reviews();
-        return view('messages', ['data' => $reviews->all()]);
+        return view('reviews', ['data' => $reviews->all()]);
     }
 }
